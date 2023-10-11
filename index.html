@@ -4,80 +4,98 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cuda Single Page Portfolio</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
 </head>
 
 <body>
 
     <header>
-        <nav>
-            <div>
-                <div>
-                   <a href="#" target="_blank"><img src="assets/images/logo.png" alt="Cuda logo"></a>
+        <nav class="navbar">
+            <div class="navbar-container container">
+                <input type="checkbox">
+                <div class="hamburger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
                 </div>
-                <ul>
-                    <li><a href="#" target="_blank">HOME</a></li>
-                    <li><a href="#" target="_blank">ABOUT</a></li>
-                    <li><a href="#" target="_blank">WORK</a></li>
-                    <li><a href="#" target="_blank">BLOG</a></li>
-                    <li><a href="#" target="_blank">CONTACT</a></li>
-                </ul>
+                 <ul class="menu-items">
+                    <li><a href="#showcase">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#services">WORK</a></li>
+                    <li><a href="#portfolio">BLOG</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                 </ul>
+                 <h1 class="logo">DS</h1>
             </div>
         </nav>
-        <h1>Hi there! We are the new kids on the block and we build awesome websites and mobile apps.</h1>
-        <button type="button"><a href="#" target="_blank">WORK WITH US!</a></button>
     </header>
 
     <main>
 
+        <!-- Intro four coloumn section -->
+        <section class="showcase-area" id="showcase">
+            <div class="showcase-container">
+                <h4>Hi there my name is DEEPAK SHINDE! I am working as a Front-End Developer <br>with hands on experience in Web Design, Landing pages, 
+                    Email Development, Banner development</h4>
+                <a href="#" class="btn btn-primary">WORK WITH ME!</a>
+            </div>
+                
+        </section>
+        <!-- Intro four coloumn section End -->
+
         <!-- Services four coloumn section -->
-        <section>
-            <div>
-                <h2>SERVICES WE PROVIDE</h2>
-                <p>We are working with both individuals and businesses from all over the globe 
-                    to create awesome websites and applications.</p>
-                <div>
-                    <div>
-                        <img src="assets/images/branding_icon.png" alt="branding">
-                        <h3>BRANDING</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.</p>
+        <section id="services">
+            <h2>SERVICES WE PROVIDE</h2>
+            <h4>We are working with both individuals and businesses from all over the globe 
+                <br>to create awesome websites and applications.</h4>
+            <div class="service-container container">
+                <div class="service-type emailers">
+                    <div class="img-container">
+                        <img src="assets/images/branding_icon.png" alt="emailers">
+                        <h1>EMAILERS</h1>
+                        <p>I develop emailers for Barclaycard and AA brand!</p>
                     </div>
-                    <div>
+                </div>
+                <div class="service-type design">
+                    <div class="img-container">
                         <img src="assets/images/design_icon.png" alt="design">
-                        <h3>DESIGN</h3>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+                        <h1>DESIGN</h1>
+                        <p>I develop designd for Barclaycard and AA brand in PSD!</p>
                     </div>
-                    <div>
-                        <img src="assets/images/development_icon.png" alt="Development">
-                        <h3>DEVELOPMENT</h3>
-                        <p>At vero eos et accusamus et iusto odio dignissimos qui blanditiis praesentium.</p>
+                </div>
+                <div class="service-type development">
+                    <div class="img-container">
+                        <img src="assets/images/development_icon.png" alt="development">
+                        <h1>DEVELOPMENT</h1>
+                        <p>I develop langing page in various tool such as VS-Code, DW.. etc</p>
                     </div>
-                    <div>
-                        <img src="assets/images/rocket_icon.png" alt="Rocket Science">
-                        <h3>ROCKET SCIENCE</h3>
-                        <p>Et harum quidem rerum est et expedita distinctio. Nam libero tempore.</p>
+                </div>
+                <div class="service-type banners">
+                    <div class="img-container">
+                        <img src="assets/images/rocket_icon.png" alt="banners">
+                        <h1>BANNERS</h1>
+                        <p>I develop banners for Brighthous and gaviscon brand in animate tool</p>
                     </div>
                 </div>
             </div>
+            
         </section>
         <!-- Services four coloumn section End -->
 
         <!-- Teams four coloumn section -->
-        <section>
-            <div>
-                <div>
-                    <div>
-                        <h2>MEET OUR BEAUTIFUL TEAM</h2>
-                        <p>We are a small team of designers and developers, who help brands with big ideas.</p>
-                    </div>
-                    <div>
-                        <img src="assets/images/circle_icon.png" alt="circle">
-                        <h3>ANNE HATHAWAY</h3>
-                        <p>CEO / Marketing Guru</p>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.</p>
-                    </div>
-                    <div>
-                        <ul>
+        <section id="team">
+            <h2>MEET MY BEAUTIFUL TEAM</h2>
+            <h4>We are a small team of designers and developers, who help brands with big ideas.</h4>
+            <div class="team-container container">
+                <div class="team-type circle">
+                    <div class="img-container">
+                        <img src="assets/images/circle_icon.png" alt="anne">
+                        <h1>ANNE HATHAWAY</h1>
+                        <p class="para">CEO / Marketing Guru</p>
+                        <p>She is the CEO of the brand</p>
+                        <ul class="social-items">
                             <li><a href="#" target="_blank"><img src="assets/images/fb_logo.png" alt="fb"></a></li>
                             <li><a href="#" target="_blank"><img src="assets/images/twitter_logo.png" alt="twitter"></a></li>
                             <li><a href="#" target="_blank"><img src="assets/images/linkedin_logo.png" alt="linkedin"></a></li>
@@ -85,204 +103,240 @@
                         </ul>
                     </div>
                 </div>
-                <div>
-                    <div>
-                        <div>
-                            <img src="assets/images/circle_icon.png" alt="circle">
-                            <h3>KATE UPTON</h3>
-                            <p>Creative Director</p>
-                            <p>Duis aute irure dolor in in voluptate velit esse cillum dolore fugiat nulla pariatur. Excepteur sint occaecat non diam proident.</p>
-                        </div>
-                        <div>
-                            <ul>
-                                <li><a href="#" target="_blank"><img src="assets/images/twitter_logo.png" alt="twitter"></a></li>
-                                <li><a href="#" target="_blank"><img src="assets/images/linkedin_logo.png" alt="linkedin"></a></li>
-                                <li><a href="#" target="_blank"><img src="assets/images/mail_logo.png" alt="mail"></a></li>
-                            </ul>
-                        </div>
+                <div class="team-type circle">
+                    <div class="img-container">
+                        <img src="assets/images/circle_icon.png" alt="kate">
+                        <h1>KATE UPTON</h1>
+                        <p class="para">Creative Director</p>
+                        <p>Kate is a hard working creative director</p>
+                        <ul class="social-items1">
+                            <li><a href="#" target="_blank"><img src="assets/images/twitter_logo.png" alt="twitter"></a></li>
+                            <li><a href="#" target="_blank"><img src="assets/images/linkedin_logo.png" alt="linkedin"></a></li>
+                            <li><a href="#" target="_blank"><img src="assets/images/mail_logo.png" alt="mail"></a></li>
+                        </ul>
                     </div>
-                        <div>
-                            <div>
-                            <img src="assets/images/circle_icon.png" alt="circle">
-                            <h3>OVIVIA WILDE</h3>
-                            <p>Lead Designer</p>
-                            <p>Nemo enim ipsam voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem nesciunt.</p>
-                        </div>
-                        <div>
-                            <ul>
-                                <li><a href="#" target="_blank"><img src="assets/images/fb_logo.png" alt="fb"></a></li>
-                                <li><a href="#" target="_blank"><img src="assets/images/twitter_logo.png" alt="twitter"></a></li>
-                                <li><a href="#" target="_blank"><img src="assets/images/linkedin_logo.png" alt="linkedin"></a></li>
-                                <li><a href="#" target="_blank"><img src="assets/images/mail_logo.png" alt="mail"></a></li>
-                            </ul>
-                        </div>
+                </div>
+                <div class="team-type circle">
+                    <div class="img-container">
+                        <img src="assets/images/circle_icon.png" alt="olivia">
+                        <h1>OLIVIA WILDE</h1>
+                        <p class="para">Lead Designer</p>
+                        <p>Olivia loves to design</p>
+                        <ul class="social-items">
+                            <li><a href="#" target="_blank"><img src="assets/images/fb_logo.png" alt="fb"></a></li>
+                            <li><a href="#" target="_blank"><img src="assets/images/twitter_logo.png" alt="twitter"></a></li>
+                            <li><a href="#" target="_blank"><img src="assets/images/linkedin_logo.png" alt="linkedin"></a></li>
+                            <li><a href="#" target="_blank"><img src="assets/images/mail_logo.png" alt="mail"></a></li>
+                        </ul>
                     </div>
-                    <div>
-                        <div>
-                            <img src="assets/images/circle_icon.png" alt="circle">
-                            <h3>ASHLEY GREENE</h3>
-                            <p>SEO / Developer</p>
-                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-                        </div>
-                        <div>
-                            <ul>
-                                <li><a href="#" target="_blank"><img src="assets/images/fb_logo.png" alt="fb"></a></li>
-                                <li><a href="#" target="_blank"><img src="assets/images/twitter_logo.png" alt="twitter"></a></li>
-                                <li><a href="#" target="_blank"><img src="assets/images/mail_logo.png" alt="mail"></a></li>
-                            </ul>
-                        </div>
+                </div>
+                <div class="team-type circle">
+                    <div class="img-container">
+                        <img src="assets/images/circle_icon.png" alt="ashley">
+                        <h1>ASHLEY GREENE</h1>
+                        <p class="para">SEO / Developer</p>
+                        <p>She is a digital marketing specialist</p>
+                        <ul class="social-items1">
+                            <li><a href="#" target="_blank"><img src="assets/images/fb_logo.png" alt="fb"></a></li>
+                            <li><a href="#" target="_blank"><img src="assets/images/twitter_logo.png" alt="twitter"></a></li>
+                            <li><a href="#" target="_blank"><img src="assets/images/mail_logo.png" alt="mail"></a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
+            
         </section>
-        <!-- Teams four coloumn section End -->
+        <!-- Team four coloumn section End -->
 
         <!-- Skills four coloumn section -->
-        <section>
-            <div>
-                <div>
-                    <h2>WE GOT SKILLS!</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
-                        tempor incididunt ut labore et dolore magna aliqua.</p>
+        <section id="skills">
+            <h2>WE GOT SKILLS</h2>
+            <h4>We have got different skills like in web design, html/css, java, graphic design & UI/UX.</h4>
+            <div class="team-container container">
+                <div class="team-type circle">
+                    <div class="p-container">
+                        <div class="progress" style="--i:85;--clr:#30bae7;">
+                            <h3>90<span>%</span></h3>
+                        </div>
+                    </div>
+                    <div class="circle-container">
+                        <h1>WEB DESIGN</h1>
+                    </div>
                 </div>
-                <div>
-                    <div>
-                        <img src="assets/images/90_icon.png" alt="web">
-                        <h3>WEB DESIGN</h3>
+                <div class="team-type circle">
+                    <div class="p-container">
+                        <div class="progress" style="--i:70;--clr:#d74680;">
+                            <h3>75<span>%</span></h3>
+                        </div>
                     </div>
-                    <div>
-                        <img src="assets/images/75_icon.png" alt="html">
-                        <h3>HTML / CSS</h3>
+                    <div class="circle-container">
+                        <h1>HTML / CSS</h1>
                     </div>
-                    <div>
-                        <img src="assets/images/70_icon.png" alt="graphic">
-                        <h3>GRAPHIC DESIGN</h3>
+                </div>
+                <div class="team-type circle">
+                    <div class="p-container">
+                        <div class="progress" style="--i:65;--clr:#15c7a8;">
+                            <h3>70<span>%</span></h3>
+                        </div>
                     </div>
-                    <div>
-                        <img src="assets/images/85_icon.png" alt="ui">
-                        <h3>UI / UX</h3>
+                    <div class="circle-container">
+                        <h1>GRAPHIC DESIGN</h1>
+                    </div>
+                </div>
+                <div class="team-type circle">
+                    <div class="p-container">
+                        <div class="progress" style="--i:80;--clr:#eb7d4b;">
+                            <h3>85<span>%</span></h3>
+                        </div>
+                    </div>
+                    <div class="circle-container">
+                        <h1>UI / UX</h1>
                     </div>
                 </div>
             </div>
+            
         </section>
         <!-- Skills four coloumn section End -->
 
         <!-- Portfolio two coloumn section -->
-        <section>
-            <div>
-                <div>
-                    <h2>OUR PORTFOLIO</h2>
-                    <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet
-                        consectetur, adipisci velit, sed quia non numquam</p>
-                        <ul>
-                            <li><a href="#" target="_blank">ALL</a></li>
-                            <li><a href="#" target="_blank">WEB</a></li>
-                            <li><a href="#" target="_blank">APPS</a></li>
-                            <li><a href="#" target="_blank">ICONS</a></li>
-                        </ul>
+        <section id="portfolio">
+            <h2>OUR PORTFOLIO</h2>
+            <h4>We have different portfolio like web, apps, icons and many more..</h4>
+            <div class="port-container">
+                <ul class="button-items">
+                    <li><a class="button button1-primary" type="button">ALL</a></li>
+                    <li><a class="button button-primary" type="button">WEB</a></li>
+                    <li><a class="button button-primary" type="button">AppS</a></li>
+                    <li><a class="button button-primary" type="button">ICONS</a></li>
+                </ul>
+            </div>
+            <div class="portfolio">
+                <div class="portfolio-container container">
+                    <div class="portfolio-type port">
+                        <div class="img-container">
+                            <img src="assets/images/mock_up_image.png" alt="mock_up">
+                            <p>She is the CEO of the brand</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-type port">
+                        <div class="img-container">
+                            <img src="assets/images/UI_app_image.png" alt="app">
+                            <p>She is the CEO of the brand</p>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <div>
-                        <img src="assets/images/mock_up_image.png" alt="mock-up">
-                        <p>ISOMETRIC PERSPECTIVE MOCK-UP</p>
-                    </div>
-                    <div>
-                        <img src="assets/images/UI_app_image.png" alt="app">
-                        <p>TIME ZONE APP UI</p>
-                    </div>
-                    <div>
-                        <div>
+                <div class="portfolio-container container">
+                    <div class="portfolio-type port">
+                        <div class="img-container">
                             <img src="assets/images/UI_players_image.png" alt="players">
-                            <p>VIRO MEDIA PLAYERS UI</p>
-                        </div>
-                        <div>
-                            <img src="assets/images/UI_kit_image.png" alt="kit">
-                            <p>BLOG / MAGAZINE FLAT UI KIT</p>
+                            <p>She is the CEO of the brand</p>
                         </div>
                     </div>
+                    <div class="portfolio-type port">
+                        <div class="img-container">
+                            <img src="assets/images/UI_kit_image.png" alt="kit">
+                            <p>She is the CEO of the brand</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="showcase-container">
+                    <a href="#" class="btn1 btn1-primary">LOAD MORE PROJECTS</a>
                 </div>
             </div>
+            
         </section>
         <!-- Portfolio two coloumn section End -->
 
         <!-- About us two coloumn section -->
-        <section>
-            <div>
-                <div>
-                    <h2>WHAT PEOPLE SAY ABOUT US</h2>
-                    <p>Our clients love us!</p>
-                </div>
-                <div>
-                    <div>
-                        <img src="assets/images/circle_icon.png" alt="circle">
+        <section id="about">
+            <h2>WHAT POEPLE SAY ABOUT US</h2>
+            <h4>Our clients love us!</h4>
+            <div class="about-container container">
+                <div class="about-item">
+                    <div class="about-img">
+                        <img src="assets/images/mugshot_icon.png" alt="Chanel Iman">
                     </div>
-                    <div>
-                        <i>“Nullam dapibus blandit orci, viverra gravida dui lobortis eget. Maecenas fringilla urna eu nisl scelerisque.” </i>
-                        <h4>CHANNEL IMAN</h4>
-                        <p>CEO of pinterest</p>
-                    </div>
-                    <div>
-                        <img src="assets/images/circle_icon.png" alt="circle">
-                    </div>
-                    <div>
-                        <i>“Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta.”</i>
-                        <h4>ADRIANA LIMA</h4>
-                        <p>Founder of Instagram</p>
+                    <div class="about-description">
+                        <p class="p">“Nullam dapibus blandit orci, viverra <br>gravida dui lobortis eget. Maecenas <br>fringilla urna eu nisl scelerisque.”</p>
+                        <h1>Chanel Iman</h1>
+                        <p class="pa">CEO of Pinterest</p>
                     </div>
                 </div>
-                <div>
-                    <div>
-                        <img src="assets/images/circle_icon.png" alt="circle">
+                <div class="about-item">
+                    <div class="about-img">
+                        <img src="assets/images/mugshot_icon.png" alt="Chanel Iman">
                     </div>
-                    <div>
-                        <i>“Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta.”</i>
-                        <h4>ANNA HATHAWAY</h4>
-                        <p>Lead Designer at Behance</p>
+                    <div class="about-description">
+                        <p class="p">“Vivamus luctus urna sed urna ultricies <br>ac tempor dui sagittis. In condimentum <br>facilisis porta.”</p>
+                        <h1>ADRIANA LIMA</h1>
+                        <p class="pa">Founder of Instagram</p>
                     </div>
-                    <div>
-                        <img src="assets/images/circle_icon.png" alt="circle">
+                </div>
+                <div class="about-item">
+                    <div class="about-img">
+                        <img src="assets/images/mugshot_icon.png" alt="Chanel Iman">
                     </div>
-                    <div>
-                        <i>“Phasellus non purus vel arcu tempor commodo. Fusce semper, purus vel luctus molestie, risus sem cursus neque.”</i>
-                        <h4>EMMA STONE</h4>
-                        <p>Co-Founder of Shazam</p>
+                    <div class="about-description">
+                        <p class="p">“Vivamus luctus urna sed urna ultricies <br>ac tempor dui sagittis. In condimentum <br>facilisis porta.”</p>
+                        <h1>ANNE HATHAWAY</h1>
+                        <p class="pa">Lead Designer at Behance</p>
+                    </div>
+                </div>
+                <div class="about-item">
+                    <div class="about-img">
+                        <img src="assets/images/mugshot_icon.png" alt="Chanel Iman">
+                    </div>
+                    <div class="about-description">
+                        <p class="p">Phasellus non purus vel arcu tempor <br>commodo. Fusce semper, purus vel luctus <br>molestie, risus sem cursus neque.”</p>
+                        <h1>ANNE HATHAWAY</h1>
+                        <p class="pa">She is a digital marketing specialist</p>
                     </div>
                 </div>
             </div>
+            
         </section>
         <!-- About us two coloumn section End -->
         
     </main>
 
     <!-- Contact section -->
-    <footer>
-        <section>
-            <div>
+        <section id="contact">
+            <div class="contact-container container"></div>
                 <h2>GET IN TOUCH</h2>
-                <p>1600 Pennsylvania Ave NW, Washington, DC 20500, United States of America. Tel: (202) 456-1111</p>
-                <div>
-                    <input type="text" placeholder="Your Name">
-                    <input type="email" placeholder="Your Email">
+                <h4>1600 Pennsylvania Ave NW, Washington, DC 20500, United States of America. Tel: (202) 456-1111</h4>
+                <div class="form-container">
+                    <input type="text" name="" id="" placeholder="Your Name">
+                    <input type="email" name="" id="" placeholder="Your Email">
+                    <textarea name="Your Message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
                 </div>
-                <textarea name="Your Message" id="" cols="30" rows="10"></textarea>
-                <div>
-                    <button type="button"><a href="#" target="_blank">SEND MESSAGE</a></button>
+                <div class="showcase-container">
+                    <a href="#" class="btn2 btn2-primary" target="_blank">SEND MESSAGE</a>
                 </div>
+            </div>
+            
+        </section>
+ 
+    <!-- Contact section End -->
+
+    <!-- Footer section -->
+    <footer>
+        <section id="footer">
+            <div class="footer-container container">
                 <div>
-                    <ul>
-                        <li><a href="">Facebook</a></li>
-                        <li><a href="">Twitter</a></li>
-                        <li><a href="">Google+</a></li>
-                        <li><a href="">LinkedIn</a></li>
-                        <li><a href="">Behance</a></li>
-                        <li><a href="">Dribbble</a></li>
-                        <li><a href="">GitHub</a></li>
+                    <ul class="footer-menu-items wrap">
+                        <li><a href="#facebook">Facebook</a></li>
+                        <li><a href="#twitter">Twitter</a></li>
+                        <li><a href="#google+">Google+</a></li>
+                        <li><a href="#linkedin">LinkedIn</a></li>
+                        <li><a href="#behance">Behance</a></li>
+                        <li><a href="#dribble">Dribbble</a></li>
+                        <li><a href="#github">GitHub</a></li>
                     </ul>
                 </div>
             </div>
         </section>
     </footer>
-    <!-- Contact section End -->
+    <!-- Footer section end -->
 
 </body>
 
