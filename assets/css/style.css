@@ -232,15 +232,21 @@ body{
     display: flex;
     justify-content: space-between;
 }
-.team-container img{
+
+.image{
     display: block;
     margin: auto;
     margin-bottom: 30px;
-    margin-top: 40px;
+    margin-top: 20px;
     max-height: 200px;
     object-fit: cover;
     object-position: center;
 }
+
+.icon{
+    display: block;
+}
+
 .circle-container{
     font-size: 16px;
     color: #3c4761;
@@ -274,6 +280,17 @@ body{
     margin: 0 10px 0 0;
     list-style: none;
     
+}
+
+.d-flex-row{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.center{
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -424,7 +441,7 @@ body{
 .img-container{
     font-size: 16px;
     color: #3c4761;
-    margin: 0 30px;
+    margin: 0 10px;
     position: relative;
 }
 
@@ -535,7 +552,7 @@ body{
 
 .about-item{
     display: flex;
-    flex: 1 1 600px;
+    flex: 1 1 450px;
     justify-content: center;
     margin-bottom: 30px;
 }
@@ -711,7 +728,7 @@ body{
 /* ############################# media queries ################################ */
 
 /* desktop approch */
-@media (max-width: 768px){
+@media (max-width: 992px){
     .navbar{
         opacity: 0.95;
     }
@@ -819,6 +836,12 @@ body{
     .team-container{
         flex-direction: column;
         align-items: stretch;
+    }
+
+    .d-flex-column-D{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
     
     .team-type:not(:last-child){
